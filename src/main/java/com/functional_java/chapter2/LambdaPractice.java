@@ -1,4 +1,4 @@
-package chapter2;
+package com.functional_java.chapter2;
 
 import java.util.function.Predicate;
 

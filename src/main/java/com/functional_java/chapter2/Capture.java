@@ -1,7 +1,4 @@
-package chapter2;
-
-import java.time.Period;
-import java.util.function.Supplier;
+package com.functional_java.chapter2;
 
 //파라미터가 아닌 람다 외부에서 정의된 변수를 람다식 내부에 저장하고 사용
 public class Capture {

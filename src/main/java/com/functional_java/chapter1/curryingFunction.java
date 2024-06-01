@@ -1,4 +1,4 @@
-package chapter1;
+package com.functional_java.chapter1;
 
 import java.util.function.Function;
 import java.util.function.BiFunction;

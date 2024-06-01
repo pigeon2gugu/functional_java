@@ -1,4 +1,4 @@
-package chapter3;
+package com.functional_java.chapter3;
 
 import java.util.function.Function;
 
