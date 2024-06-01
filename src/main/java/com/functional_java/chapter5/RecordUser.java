@@ -3,7 +3,9 @@ package com.functional_java.chapter5;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-public record RecordUser(String userName, LocalDateTime lastLogin) {
+import lombok.NonNull;
+
+public record RecordUser(@NonNull String userName, LocalDateTime lastLogin) {
 
 	//표준 생성자 재정의
 	// public RecordUser(String userName, LocalDateTime lastLogin) {
@@ -21,5 +23,10 @@ public record RecordUser(String userName, LocalDateTime lastLogin) {
 
 		userName = userName;
 		lastLogin = lastLogin;
+	}
+
+	//상태
+	public boolean hasLoggedInAtLeastOnce() {
+		return this.lastLogin != null;
 	}
 }
